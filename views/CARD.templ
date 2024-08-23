@@ -1,0 +1,22 @@
+package views
+
+import "github.com/elaminemohamed/iqraa/Type"
+
+templ CARD(user Type.User) {
+	<div class="containerC">
+		<div class="card">
+			<div class="profile">
+				<img src={ user.Img } alt="photoProfil"/>
+				<span class="userName">{ user.FirstName }</span>
+				<div class="time">2024/08/18</div>
+			</div>
+			<div class="content">
+				<div class="title">title</div>
+				<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eum rerum, quia deleniti cupiditate laborum impedit. Rerum a eos fugiat esse, est id inventore aperiam nemo ad quos explicabo recusandae.</div>
+			</div>
+			<div class="file">
+				<img src={ user.Img } alt="file"/>
+			</div>
+		</div>
+	</div>
+}

@@ -1,0 +1,17 @@
+package views
+
+templ About(hx string) {
+	if hx !="" {
+		@aboutCon()
+	} else {
+		@Layout() {
+			@aboutCon()
+		}
+	}
+}
+
+templ aboutCon() {
+	<div>
+		About
+	</div>
+}

@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: none;
+  font-family: Helvetica Neue;
+}
+
+body {
+  background-color: #e1e8ed;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.container .trr {
+  width: 50%;
+}
+.container .left {
+  position: sticky;
+  left: 0;
+  width: 23%;
+  top: 4rem;
+  height: 80vh;
+  padding: 10px;
+  background-color: #1da1f2;
+}
+.container .right {
+  position: sticky;
+  right: 0;
+  width: 20%;
+  top: 4rem;
+  height: 90vh;
+  padding: 10px;
+  background-color: #1da1f2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin-bottom: 2px;
+  z-index: 1000;
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  top: 0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+nav .rightSid {
+  display: flex;
+  justify-content: space-between;
+}
+nav .rightSid .logout {
+  margin: 20px;
+  fill: #1da1f2;
+}
+nav .rightSid button {
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #1da1f2;
+  color: #f5f8fa;
+  height: 30px;
+  width: 80px;
+}
+nav .leftSid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav .leftSid .logo {
+  font-size: 2rem;
+  margin: 10px;
+  cursor: pointer;
+  color: #1da1f2;
+}
+nav .navIcons .icons {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navIcons .icons li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.containerC {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e1e8ed;
+}
+.containerC .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 16px;
+  margin: 10px;
+}
+.containerC .card .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.containerC .card .profile img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.containerC .card .profile .userName {
+  font-weight: bold;
+  color: #1da1f2;
+  font-size: 1rem;
+}
+.containerC .card .profile .time {
+  font-size: 0.875rem;
+  color: #657786;
+  margin-left: 8px;
+}
+.containerC .card .content .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #14171a;
+  margin-bottom: 8px;
+}
+.containerC .card .content .text {
+  font-size: 1rem;
+  color: #14171a;
+  line-height: 1.5;
+}
+.containerC .card .file {
+  margin-top: 16px;
+}
+.containerC .card .file img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

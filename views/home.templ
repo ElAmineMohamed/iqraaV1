@@ -1,0 +1,21 @@
+package views
+
+import "github.com/elaminemohamed/iqraa/Type"
+
+templ Home(hx string, users *[]Type.User) {
+	if hx !="" {
+		@homecom(users)
+	} else {
+		@Layout() {
+			@homecom(users)
+		}
+	}
+}
+
+templ homecom(users *[]Type.User) {
+	<div>
+		for _,user := range *users {
+			@CARD(user)
+		}
+	</div>
+}

@@ -1,0 +1,15 @@
+package views
+
+templ Course(hx string) {
+	if hx !="" {
+		@coursecon()
+	} else {
+		@Layout() {
+			@coursecon()
+		}
+	}
+}
+
+templ coursecon() {
+	<div>Course</div>
+}

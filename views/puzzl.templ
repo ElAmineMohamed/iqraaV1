@@ -1,0 +1,15 @@
+package views
+
+templ Puzzl(hx string) {
+	if hx !="" {
+		@puzzlcon()
+	} else {
+		@Layout() {
+			@puzzlcon()
+		}
+	}
+}
+
+templ puzzlcon() {
+	<div>puzzl</div>
+}

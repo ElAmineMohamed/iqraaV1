@@ -1,0 +1,15 @@
+package views
+
+templ Teachre(hx string) {
+	if hx !="" {
+		@teachrecon()
+	} else {
+		@Layout() {
+			@teachrecon()
+		}
+	}
+}
+
+templ teachrecon() {
+	<div>teachre</div>
+}
